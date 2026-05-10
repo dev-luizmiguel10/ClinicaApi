@@ -14,8 +14,8 @@ API REST para gerenciamento de clínica médica desenvolvida com ASP.NET Core.
 
 Projeto desenvolvido utilizando:
 
-- Application Layer
-- Domain Layer
+- Application
+- Domain
 - Infraestrutura
 - Exception
 - Repository Pattern
@@ -31,9 +31,9 @@ Projeto desenvolvido utilizando:
 
 ## ✅ Regras implementadas
 
-- Não permitir horários duplicados
-- Validar existência do médico
-- Validar existência do paciente
+- Não permitir horários duplicados para agendamento.
+- Validar existência do médico.
+- Validar existência do paciente no agendamento da consulta.
 
 ## 📚 Objetivo
 
