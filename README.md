@@ -1,22 +1,40 @@
-API REST para gerenciamento de clínica médica.
+# 🏥 ClinicaApi
 
-Tecnologias Usadas
-C#
-ASP.NET Core
-Entity Framework Core
-SQL Server
-FluentValidation
+API REST para gerenciamento de clínica médica desenvolvida com ASP.NET Core.
 
-Arquitetura
-Application
-Domain
-Infraestrutura
-Repository Pattern
-Unit Of Work
+## 🚀 Tecnologias
 
-Funcionalidades
-Cadastro de pacientes
-Cadastro de médicos
-Agendamento
-Validação de horário
-Integração com ViaCEP API
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQL Server
+- FluentValidation
+
+## 🧠 Arquitetura
+
+Projeto desenvolvido utilizando:
+
+- Application Layer
+- Domain Layer
+- Infraestrutura
+- Exception
+- Repository Pattern
+- Unit Of Work
+
+## 📌 Funcionalidades
+
+- Cadastro de pacientes
+- Cadastro de médicos
+- Agendamento de consultas
+- Validação de horários
+- Integração com ViaCEP API
+
+## ✅ Regras implementadas
+
+- Não permitir horários duplicados
+- Validar existência do médico
+- Validar existência do paciente
+
+## 📚 Objetivo
+
+Projeto criado para praticar arquitetura backend, organização em camadas e regras de negócio com ASP.NET Core.
