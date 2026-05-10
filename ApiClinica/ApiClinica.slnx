@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../ApiClinica.Application/ApiClinica.Application.csproj" />
+  <Project Path="../ApiClinica.Domain/ApiClinica.Domain.csproj" />
+  <Project Path="../ApiClinica.Exception/ApiClinica.Exception.csproj" Id="1778303a-2acf-4153-ba1b-0f3a674d6821" />
+  <Project Path="../ApiClininca.Infraestrutura/ApiClininca.Infraestrutura.csproj" />
+  <Project Path="ApiClinica.csproj" />
+</Solution>
