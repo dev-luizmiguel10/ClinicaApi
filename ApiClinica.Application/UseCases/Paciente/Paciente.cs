@@ -19,10 +19,37 @@ namespace ApiClinica.Application.UseCases.Paciente
             _uni=unit;
             _cep=cep;
         }
-        public async Task AddUsuario(PacienteDto paciente)
-        {
-            var cep = await _cep.BuscarCep(paciente.CEP);
+        //public async Task AddUsuario(PacienteDto paciente)
+        //{
+        //    var cep = await _cep.BuscarCep(paciente.CEP);
 
+        //    var pacientes = new Domain.Entities.Paciente
+        //    {
+        //        Nome = paciente.Nome,
+        //        CPF = paciente.CPF,
+        //        CEP = paciente.CEP,
+        //        Endereco = cep.logradouro
+        //    };
+
+        //    await _paciente.CriarPaciente(pacientes);
+        //    await _uni.Save();
+
+        //}
+
+        public async Task<List<Domain.Entities.Paciente>> ListaPaciente()
+        {
+           return await _paciente.ListaDePaciente();
+        }
+
+        public async Task<Domain.Entities.Paciente> PacienteEspecefico(int id)
+        {
+            return await _paciente.PacienteEspeciente(id);
+        }
+
+      public  async Task<PacienteResponseDto> AddUsuario(PacienteDto paciente)
+        {
+            
+            var cep = await _cep.BuscarCep(paciente.CEP);
             var pacientes = new Domain.Entities.Paciente
             {
                 Nome = paciente.Nome,
@@ -34,16 +61,10 @@ namespace ApiClinica.Application.UseCases.Paciente
             await _paciente.CriarPaciente(pacientes);
             await _uni.Save();
 
-        }
-
-        public async Task<List<Domain.Entities.Paciente>> ListaPaciente()
-        {
-           return await _paciente.ListaDePaciente();
-        }
-
-        public async Task<Domain.Entities.Paciente> PacienteEspecefico(int id)
-        {
-            return await _paciente.PacienteEspeciente(id);
+            return new PacienteResponseDto
+            {
+                nome = pacientes.Nome
+            };
         }
     }
 }

@@ -9,6 +9,6 @@ namespace ApiClinica.Application.DTO
         public string Nome { get; set; } = string.Empty;
         public string CPF { get; set; } = string.Empty;
         public string CEP { get; set; } = string.Empty;
-        public string Endereco { get; set; } = string.Empty;
+       
     }
 }

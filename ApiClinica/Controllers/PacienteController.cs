@@ -9,13 +9,13 @@ namespace ApiClinica.Controllers
     [ApiController]
     public class PacienteController : ControllerBase
     {
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(PacienteResponseDto),StatusCodes.Status201Created)]
         [HttpPost]
-        public  async Task<IActionResult> RegisterPaciente([FromServices]IPaciente ipaciente,[FromBody]PacienteDto paciente)
+        public  async Task<IActionResult> RegisterPaciente([FromServices]IPaciente ipaciente,[FromBody]PacienteDto pacientes)
         {
-           await ipaciente.AddUsuario(paciente);
+           var paciente= await ipaciente.AddUsuario(pacientes);
 
-            return Created();
+            return Created(string.Empty,paciente);
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
