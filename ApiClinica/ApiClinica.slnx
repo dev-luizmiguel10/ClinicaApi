@@ -3,5 +3,7 @@
   <Project Path="../ApiClinica.Domain/ApiClinica.Domain.csproj" />
   <Project Path="../ApiClinica.Exception/ApiClinica.Exception.csproj" Id="1778303a-2acf-4153-ba1b-0f3a674d6821" />
   <Project Path="../ApiClininca.Infraestrutura/ApiClininca.Infraestrutura.csproj" />
+  <Project Path="../Testes_ClinicaApi/Testes_ClinicaApi.csproj" Id="bb20c218-3df4-4af0-a662-0f8004583e03" />
+  <Project Path="../UseCase_Testes/UseCase_Testes.csproj" Id="d6655d5e-c822-484e-a5ff-b2efc2e5fab7" />
   <Project Path="ApiClinica.csproj" />
 </Solution>
