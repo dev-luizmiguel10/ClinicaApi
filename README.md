@@ -4,11 +4,12 @@ API REST para gerenciamento de clínica médica desenvolvida com ASP.NET Core.
 
 ## 🚀 Tecnologias
 
-- C#
+- C#/ .NET
 - ASP.NET Core
 - Entity Framework Core
 - SQL Server
 - FluentValidation
+- xUnit + Moq + Bogus (testes unitários)
 
 ## 🧠 Arquitetura
 
@@ -29,12 +30,14 @@ Projeto desenvolvido utilizando:
 - Validação de horários
 - Integração com ViaCEP API
 
-## ✅ Regras implementadas
+## 🧪 Testes
+Projeto conta com testes unitários cobrindo:
+- Agendamento com sucesso
+- Validação de médico inexistente
+- Validação de paciente inexistente
+- Validação de data inválida
 
-- Não permitir horários duplicados para agendamento.
-- Validar existência do médico.
-- Validar existência do paciente no agendamento da consulta.
-
-## 📚 Objetivo
-
-Projeto criado para praticar arquitetura backend, organização em camadas e regras de negócio com ASP.NET Core.
+## ✅ Regras de Negócio
+- Não permitir horários duplicados
+- Validar existência do médico antes do agendamento
+- Validar existência do paciente antes do agendamento
