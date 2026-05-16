@@ -10,6 +10,7 @@ API REST para gerenciamento de clínica médica desenvolvida com ASP.NET Core.
 - SQL Server
 - FluentValidation
 - xUnit + Moq + Bogus (testes unitários)
+- WebApplicationFactory + EF InMemory (testes de integração)
 
 ## 🧠 Arquitetura
 
@@ -36,6 +37,12 @@ Projeto conta com testes unitários cobrindo:
 - Validação de médico inexistente
 - Validação de paciente inexistente
 - Validação de data inválida
+
+- ## 🔗 Testes de Integração
+- POST /api/Agendamento com sucesso
+- Médico inexistente retorna 400
+- Paciente inexistente retorna 400
+- Horário duplicado retorna 400
 
 ## ✅ Regras de Negócio
 - Não permitir horários duplicados
