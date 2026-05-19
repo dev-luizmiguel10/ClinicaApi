@@ -30,3 +30,7 @@ jobs:
       
     - name: Unit Test Validar Teste
       run: dotnet test Testes_ClinicaApi --no-build --verbosity normal
+
+    - name: Integration Testes
+      run: dotnet test TesteIntegracaoClinica --no-build --verbosity normal
+
