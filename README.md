@@ -1,3 +1,5 @@
+![.NET Tests](https://github.com/dev-luizmiguel10/ClinicaApi/actions/workflows/dotnet.yml/badge.svg)
+
 # 🏥 ClinicaApi
 
 API REST para gerenciamento de clínica médica desenvolvida com ASP.NET Core.
